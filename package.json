@@ -1,0 +1,20 @@
+{
+  "name": "com.unlucky.localization",
+  "version": "0.0.0-prewiew.1",
+  "displayName": "Unlucky Localization",
+  "description": "This is a package for localizing your game using online Google Sheets.",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "keywords": [
+    "Localization",
+    "Google Sheets"
+  ],
+  "author": {
+    "name": "UnluckyDen",
+    "email": "dsgladkih01@gmai.com",
+    "url": "https://github.com/UnluckyDen"
+  },
+  "unity": "2022.3",
+  "unityRelease": "4f1"
+}
