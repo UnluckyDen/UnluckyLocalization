@@ -28,8 +28,9 @@ namespace UnluckyLocalization.Runtime
         {
             _localizationService = new LocalizationService();
             _localizationSettings = EditorSettingsUtility.Load<LocalizationSettings>(LocalizationSettings.FileName);
-            
-             TextAsset textAsset = Resources.Load(_localizationSettings.InternalFolder + _countryCode) as TextAsset;
+
+            string resourcesPath = _localizationSettings.InternalFolder.Split("Resources/")[1];
+             TextAsset textAsset = Resources.Load($"{resourcesPath}/{_countryCode}") as TextAsset;
             
             _localizationService.SetLanguage(_countryCode, LocalizationParser.ParseToDictionary(textAsset.text));
         }
